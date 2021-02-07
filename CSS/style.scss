@@ -1,0 +1,103 @@
+@mixin header-menu {
+    position: relative;
+    list-style: none;
+    transition: opacity 0.5s ease 0s;
+    opacity: 1;
+}
+
+.main{
+    font-family:Arial;
+    color: #262626;
+    font-size: .9375em;
+    line-height: 1.6;
+    a{
+        text-decoration: none;
+        color: #262626;
+    }
+    header{
+        background: rgb(12, 12, 12) none repeat scroll 0% 0%;
+        color: rgb(230, 230, 230);
+        min-height: 40px;
+        display: flex;
+        position: sticky;
+        z-index: 3;
+        height: 5vh;
+        box-sizing: border-box;
+        font-size: .9em;
+        font-weight: 500;
+        .row{
+            align-items: center;
+            overflow: hidden;  
+            .col-7{
+                .logo{
+                      width: 5%;
+                      margin-left: 6%;
+                      line-height: 0;
+                }
+                .menu{
+                      @include header-menu();
+                      width: 85%;
+                      margin-left: 2%;
+                      line-height:2.5;
+                      li{
+                        margin-right: 2%;
+                        white-space: nowrap;
+                        cursor: pointer;
+                       }
+                }
+            }
+            .col-5{
+                .empty{
+                       width: 50%;
+                }
+                nav{
+                    width: 50%;
+                    ul{
+                        @include header-menu();
+                        width: 100%;
+                        margin-left: 8%;
+                        li{
+                            width: 18%;
+                            position: relative;
+                            cursor: pointer;
+                            align-items: center;
+                        }
+                        .edition{
+                            width: 30%;
+                            font-size: .8rem;
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+    .menu-bar{
+        nav{
+            ul{
+                list-style: none;
+                white-space: nowrap;
+                overflow-x: scroll;
+                overflow-x: hidden;
+                overflow-y: hidden;
+                li{
+                    display: inline-block;
+                    margin-right: .5%;
+                    padding-right: .5%;
+                    border-right:2px solid #a6a6a6 ;
+                    h3{
+                        font-weight: 600;
+                        font-size: 14px;
+                        padding-right: 0;
+                        .label{
+                            color: #e30000;
+                            letter-spacing: 0;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
