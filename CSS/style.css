@@ -10,7 +10,7 @@
   color: #262626;
 }
 
-.main header {
+.main .web-header {
   background: #0c0c0c none repeat scroll 0% 0%;
   color: #e6e6e6;
   min-height: 40px;
@@ -27,20 +27,20 @@
   font-weight: 500;
 }
 
-.main header .row {
+.main .web-header .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
 }
 
-.main header .row .col-7 .logo {
+.main .web-header .row .col-7 .logo {
   width: 5%;
   margin-left: 6%;
   line-height: 0;
 }
 
-.main header .row .col-7 .menu {
+.main .web-header .row .col-7 .menu {
   position: relative;
   list-style: none;
   -webkit-transition: opacity 0.5s ease 0s;
@@ -51,21 +51,21 @@
   line-height: 2.5;
 }
 
-.main header .row .col-7 .menu li {
+.main .web-header .row .col-7 .menu li {
   margin-right: 2%;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.main header .row .col-5 .empty {
+.main .web-header .row .col-5 .empty {
   width: 50%;
 }
 
-.main header .row .col-5 nav {
+.main .web-header .row .col-5 nav {
   width: 50%;
 }
 
-.main header .row .col-5 nav ul {
+.main .web-header .row .col-5 nav ul {
   position: relative;
   list-style: none;
   -webkit-transition: opacity 0.5s ease 0s;
@@ -75,7 +75,7 @@
   margin-left: 8%;
 }
 
-.main header .row .col-5 nav ul li {
+.main .web-header .row .col-5 nav ul li {
   width: 18%;
   position: relative;
   cursor: pointer;
@@ -84,9 +84,13 @@
           align-items: center;
 }
 
-.main header .row .col-5 nav ul .edition {
+.main .web-header .row .col-5 nav ul .edition {
   width: 30%;
   font-size: .8rem;
+}
+
+.main .mobile-header {
+  display: none;
 }
 
 .main .menu-bar nav ul {
@@ -114,5 +118,33 @@
   color: #e30000;
   letter-spacing: 0;
   text-transform: uppercase;
+}
+
+@media (max-width: 996px) {
+  .main .web-header {
+    display: none;
+  }
+  .main .mobile-header {
+    background: #0c0c0c none repeat scroll 0% 0%;
+    color: #e6e6e6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 3;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: .9em;
+    font-weight: 500;
+  }
+  .main .mobile-header .row .col-2 .m-menu ul {
+    position: relative;
+    list-style: none;
+    -webkit-transition: opacity 0.5s ease 0s;
+    transition: opacity 0.5s ease 0s;
+    opacity: 1;
+    line-height: 3;
+  }
 }
 /*# sourceMappingURL=style.css.map */
