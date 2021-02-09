@@ -120,6 +120,10 @@
   text-transform: uppercase;
 }
 
+.main .first-box .first-col ul {
+  list-style: none;
+}
+
 @media (max-width: 996px) {
   .main .web-header {
     display: none;
