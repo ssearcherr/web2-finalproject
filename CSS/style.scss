@@ -4,6 +4,14 @@
     transition: opacity 0.5s ease 0s;
     opacity: 1;
 }
+@mixin ul-func {
+    list-style: none;
+}
+@mixin h3-style {
+    font-size: 1.06667rem;
+    line-height: 1.25;
+    font-weight: 700 !important;
+}
 
 .main{
     font-family:Arial;
@@ -79,7 +87,7 @@
     .menu-bar{
         nav{
             ul{
-                list-style: none;
+                @include ul-func();
                 white-space: nowrap;
                 overflow-x: scroll;
                 overflow-x: hidden;
@@ -104,9 +112,91 @@
         }
     }
     .first-box{
-        .first-col{
-            ul{
-                list-style: none;
+        .row{
+            background-color: rgba(0,0,0,0);
+            justify-content: space-between;
+            .first-col{
+                ul{
+                    @include ul-func();
+                    .banner{
+                        .banner-titr{
+                            font-size: 36px;
+                            white-space: normal;
+                            display: inline-block;
+                            text-align: center;
+                            word-spacing: -.05em;
+                            font-weight: 600;
+                            line-height: 1.11111;
+                        }
+                        .banner-media{
+                            overflow: hidden;
+                            img{
+                                height: auto;
+                            }
+                        }
+                        .banner-content{
+                            padding: 7px 0;
+                            h3{
+                                @include h3-style();
+                            }
+                        }
+                        // .hr{
+                        //     border-top: 2px solid gray;
+                        // }
+                    }
+                    li{
+                        margin-top: 0;
+                        .news{
+                            border-bottom:1px solid rgb(199, 194, 194) ;
+                            h3{
+                                font-weight: 300;
+                                font-size: 1rem;
+                                line-height: 1.33333;
+                            }
+                        }
+                    }
+                }
+            }
+            .second-col{
+                ul{  
+                    @include ul-func();
+                    .mini-banner{
+                        .banner-media{
+                            img{
+                                height: auto;
+                            }
+                        }
+                        .mini-banner-titr{
+                            h3{
+                                @include h3-style();
+                            }
+                        }
+                        .description{
+                            .desc{
+                                font-size: .93333rem;
+                                line-height: 1.28571;
+                                text-decoration: gray !important;
+                            }
+                        }
+                    }
+                }
+            }
+            .third-col{
+                ul{
+                    @include ul-func();
+                    .mini-banner{
+                        .banner-media{
+                            img{
+                                height: auto;
+                            }
+                        }
+                        .mini-banner-titr{
+                            h3{
+                                @include h3-style();
+                            }
+                        }
+                    }
+                }
             }
         }
     }

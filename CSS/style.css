@@ -120,8 +120,92 @@
   text-transform: uppercase;
 }
 
-.main .first-box .first-col ul {
+.main .first-box .row {
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .first-box .row .first-col ul {
   list-style: none;
+}
+
+.main .first-box .row .first-col ul .banner .banner-titr {
+  font-size: 36px;
+  white-space: normal;
+  display: inline-block;
+  text-align: center;
+  word-spacing: -.05em;
+  font-weight: 600;
+  line-height: 1.11111;
+}
+
+.main .first-box .row .first-col ul .banner .banner-media {
+  overflow: hidden;
+}
+
+.main .first-box .row .first-col ul .banner .banner-media img {
+  height: auto;
+}
+
+.main .first-box .row .first-col ul .banner .banner-content {
+  padding: 7px 0;
+}
+
+.main .first-box .row .first-col ul .banner .banner-content h3 {
+  font-size: 1.06667rem;
+  line-height: 1.25;
+  font-weight: 700 !important;
+}
+
+.main .first-box .row .first-col ul li {
+  margin-top: 0;
+}
+
+.main .first-box .row .first-col ul li .news {
+  border-bottom: 1px solid #c7c2c2;
+}
+
+.main .first-box .row .first-col ul li .news h3 {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.33333;
+}
+
+.main .first-box .row .second-col ul {
+  list-style: none;
+}
+
+.main .first-box .row .second-col ul .mini-banner .banner-media img {
+  height: auto;
+}
+
+.main .first-box .row .second-col ul .mini-banner .mini-banner-titr h3 {
+  font-size: 1.06667rem;
+  line-height: 1.25;
+  font-weight: 700 !important;
+}
+
+.main .first-box .row .second-col ul .mini-banner .description .desc {
+  font-size: .93333rem;
+  line-height: 1.28571;
+  -webkit-text-decoration: gray !important;
+          text-decoration: gray !important;
+}
+
+.main .first-box .row .third-col ul {
+  list-style: none;
+}
+
+.main .first-box .row .third-col ul .mini-banner .banner-media img {
+  height: auto;
+}
+
+.main .first-box .row .third-col ul .mini-banner .mini-banner-titr h3 {
+  font-size: 1.06667rem;
+  line-height: 1.25;
+  font-weight: 700 !important;
 }
 
 @media (max-width: 996px) {
