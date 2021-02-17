@@ -12,7 +12,11 @@
     line-height: 1.25;
     font-weight: 700 !important;
 }
-
+@mixin news-li-style {
+    font-weight: 300;
+    font-size: .95rem;
+    line-height: 1.33333;
+}
 .main{
     font-family:Arial;
     color: #262626;
@@ -140,17 +144,15 @@
                                 @include h3-style();
                             }
                         }
-                        // .hr{
-                        //     border-top: 2px solid gray;
-                        // }
                     }
                     li{
                         margin-top: 0;
                         .news{
                             border-bottom:1px solid rgb(199, 194, 194) ;
                             h3{
+                                // @include news-li-style();
                                 font-weight: 300;
-                                font-size: 1rem;
+                                font-size: .95rem;
                                 line-height: 1.33333;
                             }
                         }
@@ -171,14 +173,14 @@
                                 @include h3-style();
                             }
                         }
-                        .description{
-                            .desc{
-                                font-size: .93333rem;
-                                line-height: 1.28571;
-                                text-decoration: gray !important;
-                            }
-                        }
                     }
+                    .description{
+                        .desc{
+                            font-size: .93333rem;
+                            line-height: 1.28571;
+                            text-decoration: gray !important;
+                        }
+                    } 
                 }
             }
             .third-col{
@@ -193,6 +195,15 @@
                         .mini-banner-titr{
                             h3{
                                 @include h3-style();
+                            }
+                        }
+                    }
+                    li{
+                        margin-top: 0;
+                        .news{
+                            border-bottom:1px solid rgb(199, 194, 194) ;
+                            h3{
+                                @include news-li-style();
                             }
                         }
                     }
