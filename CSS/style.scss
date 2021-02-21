@@ -22,6 +22,16 @@
     font-weight: 700;
     line-height: 1.375;
 }
+@mixin timeset {
+    color: #737373;
+    float: right;
+    font-weight: 700;
+    font-size: 12px;
+    font-size: .8rem;
+}
+@mixin timeset-red {
+    color: #c00;
+}
 .main{
     font-family:Arial;
     color: #262626;
@@ -153,7 +163,7 @@
                     li{
                         margin-top: 0;
                         .news{
-                            border-bottom:1px solid rgb(199, 194, 194) ;
+                            border-top:1px solid rgb(199, 194, 194) ;
                             h3{
                                  @include news-li-style();
                                 strong{
@@ -224,20 +234,123 @@
         }
     }
     .general-news{
+        .container-header{
+            overflow: hidden;
+            .h2-style{
+                color: #262626;
+                font-weight: 300;
+                font-size: 1.4rem;
+                line-height: 1.25;
+                padding: 0 0 15px;
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                &:after{
+                    content:"" ;
+                    width: 85%;
+                    height: 9px;
+                    display: inline-block;
+                    position: absolute;
+                    margin-top: 1%;
+                    border-top: 4px solid #d9d9d9;
+                    border-bottom:4px solid #d9d9d9 ;
+                }
+            }
+        }
         .row{
             .typical-col{
                 .titr{
                     background-color: #f2f2f2;
                     .title{
                         color: #404040;
-                        @include title();
+                        @include title();  
+                    }
+                    .have-continu{
+                        margin-right: 53.6%;
+                    }
+                    .continu{
+                        color: #404040;
+                        background-color: #e6e6e6;
+                        position: relative;
+                        width: 35px;
+                        padding: 7px;
+                        transition: background-color .3s;                                                          
+                        line-height: 1.29412;
+                        font-weight: 700; 
+                        font-size: 1.13333rem;
                     }
                 }
                 ul{
                     @include ul-func();
+                    .mini-banner{
+                        .banner-media{
+                            img{
+                                height: auto;
+                            }
+                        }
+                        .mini-banner-titr{
+                            .image-status{
+                                background: #001a2c;
+                                color: #fefefe;
+                                position: absolute;
+                                bottom: 108%;
+                                left: 0;
+                                padding: 12px 10px;
+                                text-transform: uppercase;
+                                font-weight: 700;
+                                line-height: 1.33;
+                                font-size: 0.8rem;
+                            }
+                            h3{
+                                @include h3-style();
+                            }
+                        }
+                    }
                     li{
                         .news{
-                            border-bottom:1px solid rgb(199, 194, 194) ;
+                            border-top:1px solid rgb(199, 194, 194) ;
+                            .timeset{
+                                @include timeset();
+                            }
+                            .timeset-red{
+                                @include timeset-red();
+                            }
+                            .news-media{
+                                width: 30%;
+                                img{
+                                    height: auto;
+                                }
+                            }
+                            .news-content{
+                                width: 70%;
+                                .news-content-style{
+                                    font-size: 1.33rem;
+                                    font-weight: 300;
+                                    line-height: 1.2;
+                                }
+                                h3{
+                                    @include news-li-style();
+                                    line-height: 1.2 !important;
+                                    svg{
+                                        color: red;
+                                    }
+                                }
+                            }
+                            .width-40{
+                                width: 40%;
+                            }
+                            .width-60{
+                                width: 60%;
+                            }
+                            h3{
+                                @include news-li-style();
+                                .icon-play{
+                                    color: #a6a6a6;
+                                }
+                                svg{
+                                    color: red;
+                                }
+                            }
                         }
                     }
                 }
