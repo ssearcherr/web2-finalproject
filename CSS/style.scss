@@ -272,6 +272,7 @@
                         color: #404040;
                         background-color: #e6e6e6;
                         position: relative;
+                        // right: 0;
                         width: 35px;
                         padding: 7px;
                         transition: background-color .3s;                                                          
@@ -351,6 +352,65 @@
                                     color: red;
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .watch{
+        .container-header{
+            overflow: hidden;
+            .h2-style{
+                color: #262626;
+                font-weight: 300;
+                font-size: 1.4rem;
+                line-height: 1.25;
+                padding: 0 0 15px;
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                &:after{
+                    content:"" ;
+                    width: 85%;
+                    height: 9px;
+                    display: inline-block;
+                    position: absolute;
+                    margin-top: 1%;
+                    border-top: 4px solid #d9d9d9;
+                    border-bottom:4px solid #d9d9d9 ;
+                }
+            }
+        }
+        .row{
+            .watch-col{
+                .video{
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                    .watch-content{
+                        background-color: #e6e6e6;
+                        margin-top: -28px;
+                        padding: 3px 20px 15px;
+                        margin: 6px 30px 0px 30px;
+                        z-index: 3;
+                        position: relative;
+                        svg{
+                            color: #c00;
+                            font-weight: 400;
+                            font-size: 1.46667rem;
+                            text-align: center;
+                            width: 100%;
+                            display: inline-block;
+                        }
+                        span{
+                            overflow: hidden;
+                            font-weight: 300;
+                            font-size: 1.32rem;
+                            color: #262626;
+                            text-align: center;
+                            line-height: 1.25;
                         }
                     }
                 }
