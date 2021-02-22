@@ -260,6 +260,33 @@
   border-bottom: 4px solid #d9d9d9;
 }
 
+.main .general-news .container-header .h2-style2 {
+  color: #262626;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.25;
+  padding: 0 0 15px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main .general-news .container-header .h2-style2:after {
+  content: "";
+  width: 85%;
+  height: 9px;
+  display: inline-block;
+  position: absolute;
+  margin-top: 1%;
+  border-bottom: 4px solid #c00;
+  border-top: 4px solid #c00;
+}
+
+.main .general-news .container-header-width {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .main .general-news .row .typical-col .titr {
   background-color: #f2f2f2;
 }
@@ -275,10 +302,25 @@
   margin-right: 53.6%;
 }
 
+.main .general-news .row .typical-col .titr i {
+  color: #404040;
+  background-color: #e6e6e6;
+  position: relative;
+  right: 0;
+  width: 35px;
+  padding: 7px;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+  line-height: 1.29412;
+  font-weight: 700;
+  font-size: 1.13333rem;
+}
+
 .main .general-news .row .typical-col .titr .continu {
   color: #404040;
   background-color: #e6e6e6;
   position: relative;
+  right: 0;
   width: 35px;
   padding: 7px;
   -webkit-transition: background-color .3s;
@@ -294,6 +336,20 @@
 
 .main .general-news .row .typical-col ul .mini-banner .banner-media img {
   height: auto;
+}
+
+.main .general-news .row .typical-col ul .mini-banner .banner-media i {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 7px;
+  background: rgba(12, 12, 12, 0.3);
+  color: #fefefe;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .main .general-news .row .typical-col ul .mini-banner .mini-banner-titr .image-status {
@@ -440,7 +496,7 @@
   padding: 3px 20px 15px;
 }
 
-.main .watch .row .watch-col .video .watch-content svg {
+.main .watch .row .watch-col .video .watch-content i {
   color: #c00;
   font-weight: 400;
   font-size: 1.46667rem;
@@ -456,6 +512,10 @@
   color: #262626;
   text-align: center;
   line-height: 1.25;
+}
+
+.main .bg-dark {
+  background-color: #1a1a1a;
 }
 
 @media (max-width: 996px) {
