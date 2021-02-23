@@ -704,6 +704,91 @@
                 }
             }
         }
+        .mobile-footer-menu{
+            display: none;
+        }
+        .contact-us{
+            width: 90%;
+            margin: 0 auto;
+            .left-side{
+                align-items: flex-start;
+                .site-logo{
+                    align-items: center;
+                    overflow: hidden;
+                    line-height: 0;
+                    height: 40px;
+                    cursor: pointer;
+                }
+            }
+            .right-side{
+                align-items: flex-end;
+                justify-content: end;
+                .right-side-box{
+                    span{
+                        font-size: 12px;
+                        font-weight: 700;
+                        letter-spacing: 1.5px;
+                        text-transform: uppercase;
+                        color: rgb(230, 230, 230);
+                        line-height: 1.6;
+                    }
+                    .vertical-line{
+                        margin-left: 16px;
+                        margin-right: 16px;
+                        height: 24px;
+                        border-left: 1px solid rgb(77, 77, 77);
+                    }
+                    .social-media{
+                        @include ul-func();
+                        li{
+                            margin: 0px 16px 0px 0px;
+                            svg{
+                                width: 24px;
+                                height: 24px;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .ending-box{
+            width: 90%;
+            margin: 0 auto;
+            .horizental-line{
+                hr{
+                    border: 0px none;
+                    height: 1px;
+                    margin: 32px auto;
+                    background: rgb(77, 77, 77) none repeat scroll 0% 0%;
+                    color: white;
+                }
+            }
+            .last-menu{
+                ul{
+                    @include ul-func();
+                li{
+                    text-align: center;
+                    margin-right: 11px;
+                    color: rgb(230, 230, 230);
+                    line-height: 12px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    letter-spacing: 0px;
+                }
+                }  
+            }
+            .description{
+                text-align: left;
+                span{
+                    display: block;
+                    font-weight: 400;
+                    color: rgb(230, 230, 230);
+                    font-size: 12px;
+                    line-height: 1.625;
+                }
+            }
+        }
     }
 }
 
@@ -737,6 +822,9 @@
         .web-footer{
             .footer-menu{
                 display: none;
+            }
+            .mobile-footer-menu{
+                
             }
         }
     }
